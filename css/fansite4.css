@@ -1,17 +1,47 @@
 *{
     margin: 0;
     padding:0;
-    margin-top: 10px;
 }
 /* 1ere partie correcte jusqu'a la div class bio */
 body{
-    width: 100%;
+    width: 100vw;
     background-color: #0E3530;
     font-family: "Funnel Display", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-
+header {
+    display: flex;
+    width:100%;
+    align-items: center;
+    background-color: #195D55;
+}
+ul {
+    display: flex;
+    width: 100%;
+}
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    list-style: none;
+    width:20%;
+}
+a {
+    font-family: Federant;
+    text-decoration: none; 
+    color: #000000;
+    text-align: center;
+}
+a:hover{
+    background-color: #144b44;
+}
+#Accueil {
+    padding-top: 11.5px;
+    padding-bottom: 11.5px;
+    font-size: 14px;
+}
 h1{
     color:white;
     text-align: center;
@@ -54,13 +84,11 @@ iframe{
     width: 100%;
     height:300px;
 }
-.logoSM{
-    list-style-type: none;
-}
 a{
     font-size: 10px;
     padding-left:50px;
-    color:white;
+    color:black;
+    font-family: ;
 }
 p{
     background-color:aquamarine;
@@ -79,6 +107,8 @@ label{
     color: white;
 }
 .place{
+    display:flex;
+    flex-direction: column;
     width:50%;
 }
 section{
@@ -92,7 +122,10 @@ textarea{
     border-radius: 20px;
     box-shadow: indianred;
 }
-
+footer{
+    width: 100%;
+    height:20px;
+}
 @media only screen and (min-width: 1000px){
     h1{
         font-size: xxx-large;
@@ -146,7 +179,7 @@ textarea{
         height:200px;
     }
     .align{
-        margin-left: 200px;
+        margin-left: ;
     }
 }
 
