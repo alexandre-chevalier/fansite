@@ -1,0 +1,279 @@
+:root {
+    .federant-regular {
+        font-family: "Federant", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .gloock-regular {
+        font-family: "Gloock", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+      
+      .hahmlet-h {
+        font-family: "Hahmlet", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    --bg-h: #195D55;
+    --bg-m: #0E3530;
+    --bg-a: #195D55;
+
+    --font-h: Federant;
+    --font-t: Gloock;
+    --font-p: Hahmlet;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-h);
+    ul {
+        display: flex;
+        width: 100vw;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            list-style: none;
+            a {
+                padding-top: 13px;
+                padding-bottom: 13px;
+                font-family: var(--font-h);
+                text-decoration: none; 
+                color: #000000;
+                text-align: center;
+                width: 20vw;
+            }
+            a:hover{
+                background-color: #144b44;
+            }
+            #Accueil {
+                padding-top: 11.5px;
+                padding-bottom: 11.5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-h);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+        li {
+            list-style: none;
+            a {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: var(--font-h);
+                text-decoration: none;
+                color: #000000;
+                font-size: 12px;
+            }
+            a:hover {
+                background-color: #144b44;
+            }
+        }
+    }
+}
+
+body {
+    background-color: var(--bg-m);
+}
+
+h1 {
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-family: var(--font-t);
+    color: #ffffff;
+}
+article {
+    width: 100vw;
+    padding-bottom: 20px;
+    h2{
+        text-align: center;
+        font-size: 24px;
+        font-family: var(--font-t);
+        color: #ffffff;
+        padding-bottom: 10px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .news1 {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(180deg, rgba(217,217,217,0) 60%, rgba(141,159,157,0.7021009087228641) 80%, rgba(25,93,85,1) 100%),
+                        url(../images_Accueil_Damso/Damso/SCH-Damso.jpg) no-repeat center center / cover;
+            h4 {
+                font-size: 12px;
+                font-family: var(--font-p);
+                display: flex;
+                align-items: flex-end;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .news2 {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(180deg, rgba(217,217,217,0) 60%, rgba(141,159,157,0.7021009087228641) 80%, rgba(25,93,85,1) 100%),
+                        url(../images_Accueil_Damso/Damso/Damso-jaimenti2.jpg) no-repeat center center / cover;
+            h4 {
+                font-size: 12px;
+                font-family: var(--font-p);
+                display: flex;
+                align-items: flex-end;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .inc1 {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(180deg, rgba(217,217,217,0) 60%, rgba(141,159,157,0.7021009087228641) 80%, rgba(25,93,85,1) 100%),
+                        url(../images_Accueil_Damso/Damso/SCH-Damso2.jpg) no-repeat center center / cover;
+            h4 {
+                font-size: 24px;
+                font-family: var(--font-t);
+                color: white;
+                display: flex;
+                align-items: flex-end;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .inc2 {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(180deg, rgba(217,217,217,0) 60%, rgba(141,159,157,0.7021009087228641) 80%, rgba(25,93,85,1) 100%),
+                        url(../images_Accueil_Damso/Damso/Damso-beyah.jpg) no-repeat center center / cover;
+            h4 {
+                font-size: 24px;
+                font-family: var(--font-t);
+                color: white;
+                display: flex;
+                align-items: flex-end;
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+.art3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .secac {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        flex-wrap: wrap;
+        width: 380px;
+        height: 300px;
+        background-color: var(--bg-h);
+        .cd1,
+        .cd2,
+        .cd3,
+        .cd4,
+        .cd5,
+        .cd6 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100px;
+            height: 125px;
+            gap: 5px;
+            img {
+                width: 100px;
+            }
+            .certifs {
+                height: 20px;
+                gap: 0px;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.art4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    .secbio {
+        width: 380px;
+        height: 164;
+        div {
+            gap: 0px;
+            div {
+                display: flex;
+                flex-direction: column;
+                font-family: var(--font-p);
+                background-color: var(--bg-h);
+                gap: 20px;
+                h3 {
+                    
+                    padding-left: 13px;
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+            img {
+                width: 133px;
+                height: 164px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    header {
+        /* height: 60px; */
+        height: fit-content;
+        ul {
+            li {
+                font-size: 20px;
+                a {
+                    padding-top: 17.5px;
+                    padding-bottom: 17.5px;
+                }
+                a:hover {
+                    background-color: #144b44;
+                }
+                #Home {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
