@@ -1,0 +1,191 @@
+:root {
+    .federant-regular {
+        font-family: "Federant", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .gloock-regular {
+        font-family: "Gloock", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .hahmlet-h {
+        font-family: "Hahmlet", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      
+    --bg-h: #195D55;
+    --bg-m: #0E3530;
+    --bg-a: #195D55;
+
+    --font-h: Federant;
+    --font-t: Gloock;
+    --font-p: Hahmlet;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #195D55;
+    ul {
+        display: flex;
+        width: 100vw;
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            list-style: none;
+            a {
+                padding-top: 13px;
+                padding-bottom: 13px;
+                font-family: var(--font-h);
+                text-decoration: none; 
+                color: #000000;
+                text-align: center;
+                width: 20vw;
+            }
+            a:hover{
+                background-color: #144b44;
+            }
+            #Accueil {
+                padding-top: 11.5px;
+                padding-bottom: 11.5px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #195D55;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+        li {
+            list-style: none;
+            a {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-family: var(--font-h);
+                text-decoration: none;
+                color: #000000;
+                font-size: 12px;
+            }
+            a:hover {
+                background-color: #144b44;
+            }
+        }
+    }
+}
+
+body {
+    background-color: #0E3530;
+    height: 100vh;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section {
+        width: 80vw;
+        height: fit-content;
+        background-color: var(--bg-h);
+        h1 {
+            color: white;
+            font-family: var(--font-t);
+            margin: 10px 0 20px 10px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            label {
+                margin: 10px 0 5px 10px;
+                color: white;
+                font-family: var(--font-p);
+                text-decoration: underline 1px;
+            }
+            input {
+                height: 30px;
+                margin: 0 10px 0 10px;
+                background-color: var(--bg-h);
+                color: white;
+                border: none;
+                font-size: 14px;
+            }
+            .underline {
+                margin: 0 10px 0 10px;
+                color: white;
+            }
+            button {
+                margin: 10px 0 10px 20px;
+                width: 100px;
+                background-color: var(--bg-h);
+                border: solid rgb(255, 255, 255) 1px;
+                border-radius: 45px;
+                color: white;
+                text-transform: uppercase;
+            }
+            button:hover {
+                border: solid #a8a8a8 1px;
+                background-color: #144b44;
+                color: #dfdfdf;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1000px) {
+
+    header {
+        /* height: 60px; */
+        height: fit-content;
+        ul {
+            li {
+                font-size: 20px;
+                a {
+                    padding-top: 17.5px;
+                    padding-bottom: 17.5px;
+                }
+                a:hover {
+                    background-color: #144b44;
+                }
+                #Accueil {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    main {
+        section {
+            width: 50vh;
+        }
+    }
+    footer {
+        ul {
+            li {
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
