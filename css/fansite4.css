@@ -192,3 +192,41 @@ footer{
     }
 }
 
+@media screen and (min-width: 1000px) {
+
+    header {
+        /* height: 60px; */
+        height: fit-content;
+        ul {
+            li {
+                font-size: 20px;
+                a {
+                    padding-top: 17.5px;
+                    padding-bottom: 17.5px;
+                }
+                a:hover {
+                    background-color: #144b44;
+                }
+                #Accueil {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    main {
+        section {
+            width: 50vh;
+        }
+    }
+    footer {
+        ul {
+            li {
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
